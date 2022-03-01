@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Select psd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <section class="alert">
+      <div class="container">
+        <div class="alert-wrapper">
+          <div class="alert-para">
+            <p>
+              Ce site utilise des cookies pour une meilleure expérience
+              utilisateur. En utilisant selectneuf.com, vous acceptez notre
+              utilisation des cookies.
+            </p>
+          </div>
+          <div class="dismiss">
+            <img src="images/dismiss-icon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--icon-sec-->
+    <section class="icon-sec">
+      <div class="container">
+        <div class="icon-sec-wrapper">
+          <div class="icon-content">
+            <img src="images/star-icon.svg" alt="" />
+            <span>Sélection</span>
+          </div>
+          <div class="icon-content">
+            <img src="images/lock-icon.svg" alt="" />
+            <span>Connexion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="toggler" id="toggler-icon-closer" onclick="closeNav()">
+            <img src="images/close-icon.svg" alt="" />
+          </div>
+          <div class="nav-logo">
+            <a href="">
+              <img src="images/nav-logo.png" alt="" />
+            </a>
+          </div>
+          <!--nav-bar---->
+          <div class="nav-menu" id="menu">
+            <div class="nav-menu-content">
+              <div class="menu-item">
+                <a href="">ACHETER </a>
+              </div>
+              <div class="menu-item">
+                <a href="">INVESTIR</a>
+              </div>
+              <div class="menu-item">
+                <a href=""> S’INFORMER </a>
+              </div>
+              <div class="menu-item">
+                <a href="">SIMULER</a>
+              </div>
+              <div class="menu-item">
+                <a href="">CONTACT</a>
+              </div>
+            </div>
+
+            <div class="nav-btn">
+              <button type="button">NOUS REJOINDRE</button>
+            </div>
+          </div>
+          <div class="mbl-icons">
+            <div class="star-icon">
+              <img src="images/star-icon.svg" alt="" />
+            </div>
+            <div class="lock-icon">
+              <img src="images/lock-icon.svg" alt="" />
+            </div>
+            <div class="toggler" id="toggler-icon-opener" onclick="openNav()">
+              <img src="images/toggler.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero-sec">
+      <div class="container">
+        <div class="hero-content">
+          <h2><span>IMMOBILIER </span>NEUF PARTOUT EN FRANCE</h2>
+          <p>4080 LOGEMENTS NEUFS SONT DISPONIBLES SUR NOTRE SITE</p>
+          <div class="select-box-main">
+            <div class="select-box select-box-one">
+              <select name="">
+                <option value="">Type de bien</option>
+                <option value="">Type de bien</option>
+              </select>
+            </div>
+            <div class="select-box select-box-two">
+               <input type="text" placeholder="Ville / CP">
+                
+              <span>Tracer sur la carte</span>
+            </div>
+            <div class="select-box select-box-three">
+              <select name="">
+                <option value="">Budget max</option>
+                <option value="">Budget max</option>
+              </select>
+            </div>
+            <div class="select-btn">
+              <button type="button">RECHERCHER</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-btm-content">
+            <h2>JE SOUHAITE ACHETER UN LOGEMENT NEUF</h2>
+            <div class="dropdown-heading-main">
+                <div class="dropdown-heading">
+                  <h2>POUR Y VVRE</h2>
+                </div>
+                <div class="dropdown-heading">
+                  <h2>POUR LE LOUER</h2>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript">
+      function openNav() {
+        document.getElementById("menu").style.width = "100%";
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("toggler-icon-opener").style.display = "none";
+        document.getElementById("toggler-icon-closer").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("toggler-icon-closer").style.display = "none";
+        document.getElementById("toggler-icon-opener").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
